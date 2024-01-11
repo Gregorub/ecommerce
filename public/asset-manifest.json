@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3de31aa8.css",
+    "main.js": "/static/js/main.07dbeec6.js",
+    "static/media/fondoPelota.png": "/static/media/fondoPelota.ad540a5cbbd3a55dba0a.png",
+    "static/media/tenis.png": "/static/media/tenis.7e1928b28759d6d936be.png",
+    "static/media/basquet.png": "/static/media/basquet.b37fd30c379d7821c347.png",
+    "static/media/voley.png": "/static/media/voley.ecc4c055b46b8fc93175.png",
+    "static/media/futbol.png": "/static/media/futbol.a8d752b23eb9353b6b5e.png",
+    "static/media/rugby.png": "/static/media/rugby.5606d73c1e3a5ead4769.png",
+    "index.html": "/index.html",
+    "main.3de31aa8.css.map": "/static/css/main.3de31aa8.css.map",
+    "main.07dbeec6.js.map": "/static/js/main.07dbeec6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3de31aa8.css",
+    "static/js/main.07dbeec6.js"
+  ]
+}
