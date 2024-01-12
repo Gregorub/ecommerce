@@ -12,6 +12,7 @@ const FTP_USER = process.env.FTP_USER || ''
 const FTP_PASS = process.env.FTP_PASS || ''
 const MP_AccessToken = process.env.MP_AccessToken || ''
 const DOMINIO = process.env.DOMINIO
+const URL_REDIRECT = process.env.URL_REDIRECT
 
 export default {
     MODO_PERSISTENCIA,
@@ -22,5 +23,6 @@ export default {
     FTP_USER,
     FTP_PASS,
     MP_AccessToken,
-    DOMINIO
+    DOMINIO,
+    URL_REDIRECT
 }

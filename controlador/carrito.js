@@ -3,8 +3,7 @@ import Servicio from '../servicio/carrito.js'
 class Controlador {
 
     constructor() {
-        this.servicio = new Servicio()
-        this.dominio = process.env.NODE_ENV === 'production'? '': 'http://localhost:3000'
+        this.servicio = new Servicio();
     }
 
     obtenerCarrito = async (req,res) => {
@@ -27,7 +26,7 @@ class Controlador {
         const { payment_id, status, merchant_order_id } = req.query
         console.log(payment_id, status, merchant_order_id)
         
-        res.redirect(`${this.dominio}/carrito?payment_id=${payment_id}&status=${status}&merchant_order_id=${merchant_order_id}`)
+        res.redirect(`${config.URL_REDIRECT}/carrito?payment_id=${payment_id}&status=${status}&merchant_order_id=${merchant_order_id}`)
     }
 
     createPreference = async (req, res) => {
