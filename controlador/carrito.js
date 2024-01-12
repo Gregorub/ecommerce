@@ -1,4 +1,5 @@
 import Servicio from '../servicio/carrito.js'
+import config from '../config.js'
 
 class Controlador {
 
