@@ -10,7 +10,6 @@ class Router {
     start() {
         this.router.get('/', this.controlador.obtenerCarrito)
         this.router.post('/', this.controlador.guardarCarrito)
-        this.router.get('/mp/feedback', this.controlador.feedback)
         this.router.post('/mp/create_preference', this.controlador.createPreference)
 
         return this.router

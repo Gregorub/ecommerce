@@ -23,13 +23,6 @@ class Controlador {
         }
     }
 
-    feedback = async (req,res) => {
-        const { payment_id, status, merchant_order_id } = req.query
-        console.log(payment_id, status, merchant_order_id)
-        
-        res.redirect(`${config.URL_REDIRECT}/carrito?payment_id=${payment_id}&status=${status}&merchant_order_id=${merchant_order_id}`)
-    }
-
     createPreference = async (req, res) => {
         try {
             const prefItems = req.body

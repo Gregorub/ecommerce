@@ -20,17 +20,8 @@ class Servicio {
     }
 
     createPreference = async prefItems => {
-        //console.log(prefItems)
         try {
-            const preferences = await preference.create({ body: {
-                items: prefItems.items,
-                back_urls: {
-                    "success": `${config.DOMINIO}:${config.PORT}/api/carrito/mp/feedback`,
-                    "failure": `${config.DOMINIO}:${config.PORT}/api/carrito/mp/feedback`,
-                    "pending": `${config.DOMINIO}:${config.PORT}/api/carrito/mp/feedback`
-                },
-                auto_return: "approved",
-            }})
+            const preferences = await preference.create(prefItems)
             return preferences.id
         }
         catch(error) {
@@ -40,5 +31,5 @@ class Servicio {
     }
 }
 
-export default Servicio
+export default Servicio;
 
